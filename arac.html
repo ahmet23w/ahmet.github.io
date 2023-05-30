@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasarım Kodlama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+ 
+        html{
+            font-size:62.5%;/*1rem = 10px*/
+        }
+ 
+        body,h1,h2,ul{
+            margin:0;
+            padding:0;
+            
+        }
+        ul{
+            list-style: none;
+        }
+ 
+        /*******************/
+        body{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .arkaplan{
+            background-color: #000000;
+        }
+        .kapsayici{
+            width: 960px;
+            margin:0 auto;
+        }
+        
+        .ust{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 200px;
+        }
+ 
+        .ust .logo{
+            text-align: center;
+            color:#fff;
+        }
+        .ust .logo h1{
+            font-size:4rem;
+            letter-spacing: .5rem;
+        }
+ 
+        .ust .logo h1::first-letter{
+            color:#FCB941;
+        }
+ 
+        .ust .logo h1:hover::first-letter{
+            background-color: #FCB941;
+            color:#000000;
+        }
+ 
+        .ust .logo h2{
+            font-size:2.4rem;
+        }
+ 
+        
+ 
+        
+ 
+        .ust .menu ul{
+            display: flex;
+        }
+        .ust .menu ul li{
+            margin:0 1rem;
+        }
+ 
+        .ust .menu ul a{
+            color:#fff;
+            text-decoration: none;
+            font-size:1.8rem;
+            padding:0 2rem;
+        }
+        .ust .menu ul a:hover{
+            color:#FCB941;
+        }
+ 
+        .orta .bolum1{
+            margin-top:10px;
+            border:10px solid #000000;
+            padding:10px;
+        }
+ 
+        .orta .bolum1 img{
+            display: block;
+            width: 100%;
+        }
+ 
+        .orta .bolum2{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .orta .bolum2 .kutu{
+            flex-basis: 290px;
+        }
+ 
+        .orta .bolum2 .kutu h2{
+            font-size: 2rem;
+        }
+ 
+        .orta .bolum2 .kutu p{
+            font-size: 1.6rem;
+        }
+ 
+        .orta .bolum3{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+ 
+        .orta .bolum3 h1{
+            font-size:2.5rem;
+        }
+ 
+        .orta .bolum3 p{
+            font-size:1.6rem;
+        }
+ 
+        .alt{
+            margin-top:20px;
+            padding:20px 0;
+            display: flex;
+            gap:20px;
+        }
+        .alt .baglanti{
+            flex-grow: 1;
+        }
+ 
+        .alt .baglanti ul li{
+            border-bottom:dotted 1px #FCB941;
+            margin:5px 0;
+        }
+ 
+        .alt .baglanti a{
+            font-size:1.6rem;
+            text-decoration: none;
+            color:#FCB941;
+        }
+ 
+ 
+        .cizgi{
+            border-top:dotted 1px #FCB941;
+            margin:20px 0;
+        }
+ 
+        .alt-kenar-10{
+            border-bottom:10px solid #FCB941;
+        }
+        
+    </style>
+</head>
+<body>
+ 
+    <!-- sayfa üstü-->
+    <div class="arkaplan alt-kenar-10">
+        <div class="ust kapsayici">
+            <div class="logo">
+                <h1>ŞimşekAUTO</h1>
+                <h2>www.ŞimşekAUTO.com</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="122a.html">Ana Sayfa</a></li>
+                    <li><a href="arac.html">Araç Bilgileri</a></li>
+                    <li><a href="satilik.html"> Satılık Araçlar</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- sayfa ortası-->
+    
+    <div class="orta kapsayici">
+        <div class="bolum1">
+             <img src="s2.jpg" alt="Kapak resmi">
+             <div class="cizgi"></div>
+             <div class="bolum3">
+                 <div class="icerik">
+                    <h1>Honda S2000</h1>
+                    <p><b>Honda S2000 1995 yılında Tokyo Motor tarafından konsept otomobil olarak gösterilen 1999 ve 2009 yılları arasında Japon otomobil markası Honda tarafından üretilen bir spor otomobildir. Üretim versiyonu şirketin 50. yılını kutlamak için Nisan 1999 yılında başlatıldı.<b></p>
+                    <p><b>Otomobil pazarına çıktığı andan itibaren büyük yankı uyandıran S2000 halk arasında "Halk tipi Ferrari" lâkabını almıştır. Bir piston başına en fazla gücü alabilen spor otomobildir.</b></p>
+                 </div>
+                 <div class="gorsel">
+                     <img src="s23.jpg" alt="S2000">
+                 </div>
+         </div>
+    </div>
+
+
+         <div class="orta kapsayici">
+            <div class="bolum1">
+                 <img src="GTR.jpg" alt="Kapak resmi">
+                 <div class="cizgi"></div>
+                 <div class="bolum3">
+                     <div class="icerik">
+                        <h1>Nissan Skyline GTR R34</h1>
+                        <p><b>İlk kez 1998 yılında piyasaya sürülen Nissan Skyline GTR R34 modeli, 2002 yılına kadar aktif satışta kalmıştır. İkiz turbo I6 motoru sayesinde arttırılan beygir gücü, döneminin en üstün teknolojisine sahip ekran birimi, kısa dingil mesafesi, aerodinamik gövdesi ve benzersiz tasarımı sayesinde otomobilseverleri kendine hayran bıkramıştır.<b></p>
+                        <p><b>Nissan Skyline GTR R34 modelinin en dikkat çeken özelliklerinden biri de sahip olduğu RB26 DETT motorudur. Son derece güçlü olan bu motor, 2002 JGTC sezonu başladıktan sonra Nissan tarafından güçlendirilmiş VQ30DETT motoru ile değiştirildi. Sezon boyunca bu motor kullanıldı ve çok daha iyi olduğu ortaya çıktı.  <b></p>
+                     </div>
+                     <div class="gorsel">
+                         <img src="sgtr.jpg" alt="GTR" >
+                     </div>
+             </div>
+         </div>
+
+    <div class="orta kapsayici">
+         <div class="bolum1">
+              <img src="car.jpg" alt="Kapak resmi">
+              <div class="cizgi"></div>
+              <div class="bolum3">
+                  <div class="icerik">
+                     <h1>Toyota Corolla</h1>
+                     <p><b>Toyota Corolla kompakt yani C segmente ait bir otomobil olarak geçer. İlk olarak 1966 yılında üretilmeye başlanmış ve günümüze kadar 12 yeni nesil kasa piyasaya sürülmüştür. 40 milyondan daha fazla üretim adedi olduğu için dünya üzerindeki en çok satan otomobil unvanına sahip olmuştur.</b></p>
+                  </div>
+           </div>
+     </div>
+            
+    
+</body>
+</html>
